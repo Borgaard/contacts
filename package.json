@@ -1,0 +1,19 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "A simple address book to manage contacts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "whyGaard",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "ejs": "^1.0.0",
+    "express": "^4.10.4",
+    "method-override": "^2.3.0",
+    "path": "^0.4.9",
+    "pg": "^4.1.0"
+  }
+}
