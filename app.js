@@ -66,7 +66,7 @@ app.get('/people/:id/edit', function(req, res) {
 });
 //db.query(what you want to query, [elems of array], callback(called once db is done){})
 
-//where to add post.create? D:
+// :D
 
 app.patch('/people/:id', function(req, res) {
 	db.query("UPDATE people SET name = $1, phone = $2, email = $3 WHERE id = $4", [req.body.name, req.body.phone, req.body.email, req.params.id], function(err, dbRes) {
@@ -88,8 +88,6 @@ app.delete('/people/:id', function(req, res) {
 
 
 
-//Adding person hangs in browser
-//Nothing happens when edit
 
 /*
 HTTP Verb | Path | Action
@@ -103,50 +101,6 @@ DELETE| /people/:id | delete
 GET   | /people/:id | show
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
